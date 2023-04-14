@@ -1,17 +1,21 @@
+// Define a function to print out uncompleted todos in each note
 function uncompletedNotes(notes) {
+  // Loop through each note in the notes array
   for (const note of notes) {
+    // Get the todos array for the current note
     todos = note.todos
+    // Loop through each todo in the todos array
     for (const todo of todos) {
+      // Check if the todo is false
       if (!todo.done){
+        // Print out the uncompleted todo
         console.log(todo)
       }
-
     }
   }
-
 }
 
-
+// Define an array of notes with todos
 const notes = [
   {
     id: 1,
@@ -62,4 +66,5 @@ const notes = [
   },
 ];
 
+// Call the uncompletedNotes function with the notes array
 uncompletedNotes(notes);
