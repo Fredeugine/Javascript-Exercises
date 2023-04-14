@@ -1,7 +1,15 @@
-# Exercise 56
+# Classes - Exercise 56
 
-Create a function called `uncompletedNotes` that returns only not completed todos.
+Create a class called Developer. The Developer class has to inherit the Person
+class created in the previous exercise. The Developer class takes in another
+argument in the constructor method (role).
 
-**Suggestion**
+class Person {
+constructor(firstName, lastName) {
+this.firstName = firstName;
+this.lastName = lastName;
+}
+}
 
-Use the forEach and filter arrays methods.
+const developer = new Developer("Mario", "Rossi", "Front-end");
+console.log(developer.firstName + " " + developer.lastName + " " + developer.role);
