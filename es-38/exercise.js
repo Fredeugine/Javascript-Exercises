@@ -3,8 +3,10 @@ function printName(){
     function inner(){
         return helloName
     }
-    console.log(inner())
+    return inner
 
 }
-setTimeout(printName,1000)
+setTimeout(function (){
+    return console.log(printName()())
+},1000)
 
