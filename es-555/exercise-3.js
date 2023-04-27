@@ -1,10 +1,13 @@
-function adultFilter(persons) {
-  return persons.filter(function isAdult(person) {
-        return person.age >= 18;
-      }
-  )
+function calculateAverageAge(persons) {
+  for (const person of persons) {
+    ages.push(person.age)
+  }
+sumofAges = ages.reduce(function (a,b){
+        return a + b
+})
+   return sumofAges/ ages.length
 }
-
+let ages = []
 const persons = [
   { name: 'Paul', age: 16 },
   { name: 'George', age: 17 },
@@ -18,6 +21,6 @@ const persons = [
   { name: 'Alice', age: 28 }
 ];
 
-const adults = adultFilter(persons);
+const average = calculateAverageAge(persons);
 console.log(persons);
-console.log(adults);
+console.log(average);
