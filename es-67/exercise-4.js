@@ -1,5 +1,5 @@
-function sum(...numbers) {
-  return numbers.reduce(function (a,b){
+function sum(...spread) {
+  return spread.reduce(function (a,b){
     return a + b;
   });
 }
