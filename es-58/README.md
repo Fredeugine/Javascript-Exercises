@@ -6,6 +6,7 @@ Create the getters and setters methods for each property and a getter method cal
 class Person {
 // ...
 }
+get F
 
 const person = new Person('Mario', 'Rossi', 25);
 console.log(person.fullName);

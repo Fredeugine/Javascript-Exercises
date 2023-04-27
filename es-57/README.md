@@ -7,6 +7,8 @@ constructor(firstName, lastName) {
 this.firstName = firstName;
 this.lastName = lastName;
 }
+static fromObject(Object){
+
 }
 
 const obj = {

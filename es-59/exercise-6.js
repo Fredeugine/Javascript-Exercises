@@ -20,21 +20,21 @@ class Circle {
 class AreaCalculator {
   static calculate(geometricFigure){
     if (geometricFigure instanceof Circle){
-      return 3.14159265359 * (circle.radius ** 2)
+      return 3.14159265359 * (circles.radius ** 2)
     }
     if(geometricFigure instanceof Rectangle){
-      return rectangle.width * rectangle.height
+      return rectangles.width * rectangles.height
     }
     if (geometricFigure instanceof Square){
-      return square.side * square.side
+      return squares.side * squares.side
     }
   }
 }
 
-const square = new Square(4);
-const rectangle = new Rectangle(4, 2);
-const circle = new Circle(5);
+const squares = new Square(4);
+const rectangles = new Rectangle(4, 2);
+const circles = new Circle(5);
 
-console.log(AreaCalculator.calculate(square));
-console.log(AreaCalculator.calculate(rectangle));
-console.log(AreaCalculator.calculate(circle));
+console.log(AreaCalculator.calculate(squares));
+console.log(AreaCalculator.calculate(rectangles));
+console.log(AreaCalculator.calculate(circles));
