@@ -7,8 +7,6 @@ function checkIfGreaterThan15(num) {
     });
 }
 
-
-
 const number = 15;
 checkIfGreaterThan15(number).then(function (numbers){
     console.log(numbers + ' is greater than 10')
