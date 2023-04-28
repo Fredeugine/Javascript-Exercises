@@ -11,7 +11,7 @@ function giveDate(number){
         if (number > 0.5){
             resolve('{name: "John", age: 24}')
         }
-        else reject(new Error('error'))
+        else reject(new Error())
     })
 }
 const isLogged = true;
@@ -22,7 +22,7 @@ randomNumber(isLogged).then(function (result){
         console.log(result)
     })
     .catch(function (result){
-    console.log('Number is less than 0.5')
+    console.log(result + ' ,number is less than 0.5')
 })
 
 
