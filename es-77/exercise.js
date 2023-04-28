@@ -3,7 +3,7 @@ function randomNumber(isLogged){
         if (isLogged){
             resolve(Math.floor(Math.random()* 4))
         }
-        else reject(new Error('error'))
+        else reject('isLogged is false')
     })
 }
 function giveDate(number){
@@ -11,7 +11,7 @@ function giveDate(number){
         if (number > 0.5){
             resolve('{name: "John", age: 24}')
         }
-        else reject(new Error('Number is less than or equal to 0.5'))
+        else reject('Number is less than or equal to 0.5')
     })
 }
 const isLogged = true;
