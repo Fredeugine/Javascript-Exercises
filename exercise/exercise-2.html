@@ -1,7 +1,7 @@
 <html>
   <body>
     <div id="container" style="display: flex; align-items: center;"></div>
-    <ul class="todo-list">HI</ul>
+    <ul class="todo-list">Fetched Titles</ul>
   </body>
 </html>
 
@@ -15,7 +15,8 @@ async function jsonDataFetch() {
 
 function appendLists(datas) {
   datas.forEach(function(obj) {
-    const li = document.createElement('li').textContent = obj.title;
+    const li = document.createElement('li')
+    li.textContent = obj.title;
     todoList.appendChild(li);
   });
 }
