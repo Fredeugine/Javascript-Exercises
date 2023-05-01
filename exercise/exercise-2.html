@@ -9,7 +9,7 @@
   const todoList = document.querySelector('.todo-list');
 async function jsonDataFetch() {
   const results = await fetch('https://jsonplaceholder.typicode.com/todos');
-  const data = await results.json();
+  const data = results.json();
   return data;
 }
 
