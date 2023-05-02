@@ -5,6 +5,6 @@ const user = {
 };
 
 function storeUser(obj){
-	localStorage.setItem('user','obj')
+	localStorage.setItem('user',obj)
 }
 storeUser(JSON.stringify(user))
